@@ -1,9 +1,32 @@
 
+## asennettu Herokuun:
+\
+https://jussico-puhfront.herokuapp.com/
 
-tää on asennettu Herokuun: https://jussico-puhfront.herokuapp.com/
+## et siellä
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
 
 seuraa default höpinää joka pitää tai ei pidä paikkaansa jossain määrin:
+
+...
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
