@@ -1,6 +1,10 @@
 import axios from 'axios'
+
 // const baseUrl = 'http://localhost:3001/persons'
-const baseUrl = 'https://jussico-puhback.herokuapp.com/persons'
+//const baseUrl = 'https://jussico-puhback.herokuapp.com/persons'
+const baseUrl = process.env.REACT_APP_BACKEND_URL
+
+console.log("using baseUrl:", baseUrl)
 
 const getAll = () => {
     const request = axios.get(baseUrl)
