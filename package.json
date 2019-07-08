@@ -9,7 +9,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "just_serve": "set BROWSER=none&&react-scripts start",
+    "just_serve_win": "set BROWSER=none&&react-scripts start",
+    "just_serve_lin": "BROWSER=none react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

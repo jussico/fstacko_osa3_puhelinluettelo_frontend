@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run just_serve
+npm run just_serve_lin
 

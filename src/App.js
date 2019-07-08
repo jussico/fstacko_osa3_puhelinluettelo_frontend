@@ -123,6 +123,15 @@ const App = () => {
                                 setPersons(responseData)
                                 setFiltered(responseData.filter(person => (person.name.includes(hakuehto))))
                             })
+                    }).catch(error => {                
+                        console.log('error:' , error)
+                        console.log('errormessage:', error.response.data.error)
+                        setErrorMessage(
+                            error.response.data.error
+                        )
+                        setTimeout(() => {
+                            setErrorMessage(null)
+                        }, 5000)
                     })
             } else {
                 const ok = window.confirm(`${uusiNimi} is already added to phonebook, replace the old number with a new one?`)
@@ -142,6 +151,16 @@ const App = () => {
                                     setPersons(responseData)
                                     setFiltered(responseData.filter(person => (person.name.includes(hakuehto))))
                                 })
+                        })
+                        .catch(error => {                
+                            console.log('error:' , error)
+                            console.log('errormessage:', error.response.data.error)
+                            setErrorMessage(
+                                error.response.data.error
+                            )
+                            setTimeout(() => {
+                                setErrorMessage(null)
+                            }, 5000)
                         })
                 }
             }
